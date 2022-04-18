@@ -3,6 +3,7 @@
         "ctest",
         "googletest",
         "gtest",
-        "MSVC"
+        "MSVC",
+        "posix"
     ]
 }
