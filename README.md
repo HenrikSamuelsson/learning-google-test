@@ -24,3 +24,38 @@ Have multiple build systems:
 
 - Cmake 3.23.0
 - Bazel 4.2.1
+
+## Quick Start CMake
+
+Made a project in the folder `google-test-quick-start-cmake`. This project consists of a C++ file with tests and a file with instructions for CMake.
+
+Built and ran the tests in the project from the command line when in the project folder using the commands:
+
+```txt
+cmake -S . -B build
+```
+
+```txt
+cmake --build build
+```
+
+```txt
+cd build
+```
+
+```txt
+ctest
+```
+
+The output from the last `ctest` command was:
+
+```txt
+ Start 1: HelloTest.BasicAssertions
+1/1 Test #1: HelloTest.BasicAssertions ........   Passed    0.21 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.29 sec
+```
+
+From the output it can be seen that one test ran and this test passed.
